@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://bgih3026637xi"]
 
 [ext_resource type="Script" uid="uid://cvemwb2flbqhe" path="res://Scripts/dino.gd" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://t36s8quepmpf" path="res://dinoCharactersVersion1.1/sheets/DinoSprites - vita.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://bht6osfwyy2jr" path="res://miku.png" id="2_0xm2m"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ig7tw"]
 animation = &"fly"
@@ -77,7 +77,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_ig7tw"]
 resource_name = "idle"
-length = 0.6
+length = 0.8
 loop_mode = 1
 step = 0.2
 tracks/0/type = "value"
@@ -87,10 +87,10 @@ tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [0, 1, 0, 1]
+"values": [0, 7, 8]
 }
 
 [sub_resource type="Animation" id="Animation_1bvp3"]
@@ -143,6 +143,8 @@ position = Vector2(12, 12)
 shape = SubResource("RectangleShape2D_ig7tw")
 
 [node name="Body" type="Sprite2D" parent="dino"]
-position = Vector2(12, 12)
-texture = ExtResource("1_ig7tw")
-hframes = 24
+position = Vector2(12.000002, 12)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("2_0xm2m")
+hframes = 6
+vframes = 3
