@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 
-const SPEED = 100.0
+const SPEED = 200.0
 const JUMP_VELOCITY = -400.0
-const WIN_SIZE = Vector2(64,64)
+const WIN_SIZE = Vector2(128,128)
 
 @onready var body = $Body
 @onready var animation_tree = $AnimationTree
