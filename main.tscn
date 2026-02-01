@@ -119,7 +119,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
-size = Vector2(64, 64)
+size = Vector2(131, 130)
 
 [node name="main" type="Node2D"]
 
@@ -139,12 +139,12 @@ libraries = {
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dino"]
-position = Vector2(32, 32)
+position = Vector2(65.5, 65)
 shape = SubResource("RectangleShape2D_0xm2m")
 
 [node name="Body" type="Sprite2D" parent="dino"]
-position = Vector2(32, 32)
-scale = Vector2(2, 2)
+position = Vector2(64, 66)
+scale = Vector2(-4, 4)
 texture = ExtResource("2_0xm2m")
 hframes = 6
 vframes = 3
